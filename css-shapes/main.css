@@ -212,3 +212,145 @@
   top: -15px;
   box-shadow: 0px 1px 19px 8px orange;
 }
+
+
+
+#infinity {
+    width: 220px;
+    height: 100px;
+    position: relative;
+}
+
+#infinity:before, #infinity:after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 20px solid #06c999;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+}
+
+#infinity:after {
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+}
+
+.infinity {
+  width: 344px;
+  height: 160px;
+  background: transparent;
+  position: relative;
+}
+
+.infinity:before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: solid 30px red;
+  border-radius: 50% 50% 0 50%;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.infinity:after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: solid 30px red;
+  border-radius: 50% 50% 50% 0;
+  position: absolute;
+  right: 0px;
+  transform: rotate(45deg);
+}
+
+.toaster {
+  width: 200px;
+  height: 110px;
+  background: silver;
+  border-bottom: solid darkgrey 20px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  position: relative;
+}
+
+.toaster:before {
+  content: '';
+  background: red;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid white;
+  border-right: solid 30px silver;
+  border-top-left-radius: 100%;
+}
+
+.toaster:after {
+  content: '';
+  width: 20px;
+  height: 10px;
+  background: darkgray;
+  position: absolute;
+  top: 64px;
+  right: -15px;
+  border-radius: 0 25% 25% 0;
+  border-left: black solid 3px;
+}
+
+.toast {
+  width: 30px;
+  height: 30px;
+  background: #b5735e;
+  border: solid brown 2px;
+  position: relative;
+}
+
+.toast:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #b5735e;
+  position: absolute;
+  top: -6px;
+  left: -5px;
+  border-top: solid brown 2px;
+  border-left: solid brown 2px;
+  border-radius: 50% 25% 0 25%;
+}
+
+.toast:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #b5735e;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  border-top: solid brown 2px;
+  border-right: solid brown 2px;
+  border-radius: 25% 50% 25% 0%;
+}
+
+#toast1 {
+  position: absolute;
+  top: -100px;
+  right: 25px;
+  transform: rotate(30deg);
+}
+
+#toast2 {
+  position: absolute;
+  top: -150px;
+  left: 25px;
+  transform: rotate(-30deg);
+}
