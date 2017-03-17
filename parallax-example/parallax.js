@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $(window).on('scroll', function() {
 
+
+
     var scrollPosition = $(this).scrollTop();
     console.log('scrollPosition', scrollPosition);
 
