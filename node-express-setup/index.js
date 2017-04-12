@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+// console.log(app);
+
 app.use(bodyParser.json());
 
 let firstName = 'Joe'
